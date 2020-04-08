@@ -1,6 +1,6 @@
 ---
 - name: This sets up an httpd webserver
-  hosts: web01.local
+  hosts: web1.local
   tasks:
   - name: Install apache packages 
     yum:
