@@ -1,4 +1,5 @@
 # Ansible Demo Using Vagrant For Mac OS 
+Big shoutout to Jerry!! Who collaborated with me on this project
 Hacked Websites Demo
 (Images changed on website)
 
@@ -9,7 +10,7 @@ This was created with:
 - Mac OSX 10.15.2   
 
 
-The following instructions will help you create a demo/lab environment.
+The following instructions will help you create a demo/lab environment.  
 This demo will run locally on your Mac laptop/desktop
 
 
@@ -28,11 +29,10 @@ Instructions:
 2. Download and install Vagrant
 3. Install Ansible engine
     - https://docs.ansible.com/ansible/latest/installation_guide/intro_installation.html#id18  
-4. Create a folder called vagrant under "Documents" 
+4. Create a folder called vagrant under "Documents"
 5. Copy "Vagrantfile" to the newly created folder
-6. Open terminal navegate to the "vagrant" folder you created under "Documents"
-7. Run the following command  
+6. Copy "server_access.yml" to the same folder
+7. Open terminal navegate to the "vagrant" folder you created under "Documents"
+8. Run the following command  
     - vagrant up  
     (This will run the vagrant config file you copied to the vagrant folder and create the first 3 virtual machines)
-
-Copy srv_raccess.yml to same folder where vagrant config file is
