@@ -5,11 +5,11 @@ Hacked Websites Demo
 (Images changed on website)
 
 ++++++++++++++++++  
-UNDER DEVELOPMENT   
+<b>UNDER DEVELOPMENT </b>  
 ++++++++++++++++++  
 
 
-This was created with:  
+<b>This was created with: </b> 
 - Virtual Box 6.1.4 https://www.virtualbox.org/wiki/Downloads  
 - Vagrant 2.2.7 https://www.vagrantup.com/downloads.html  
 - Ansible version 2.9.6
@@ -21,7 +21,7 @@ This demo will run locally on your Mac laptop/desktop
 Although
 
 
-After following the instructions you will have the following:  
+<b>After following the instructions you will have the following:  </b>
 - Ansible Tower Server  
 - 2 CentOS servers (to be configured as web servers)  
 - Ability to run provided playbook in Tower to configure both servers as webservers  
@@ -43,7 +43,7 @@ web2
 http://127.0.0.1:8012
 
 
-Instructions: 
+<b>Instructions: </b>
 1. Download and install Virtual Box
 2. Download and install Vagrant
 3. Install Ansible engine
