@@ -1,4 +1,5 @@
 # Ansible Demo Using Vagrant For Mac OS 
+Shared by Christian Trujillo
 Big shutout to Jerry @Corumj !! who collaborated with me on this project  
 
 Hacked Websites Demo  
@@ -34,15 +35,16 @@ Ansible Tower Server
 192.168.50.10  
 https://127.0.0.1:8010  
 
-web1  
+web1  (CentOS)
 192.168.50.11  
 http://127.0.0.1:8011  
 
-web2  
+web2  (CentOS)
 192.168.50.12  
 http://127.0.0.1:8012  
 
 
+<h2>Installing and running Ansible Tower Lab</h2>
 <b>Instructions: </b>
 1. Download and install Virtual Box
 2. Download and install Vagrant
@@ -54,7 +56,20 @@ http://127.0.0.1:8012
 7. Open terminal navigate to the "vagrant" folder you created under "Documents"
 8. Run the following command  
     - vagrant up  
-    This will do the following:
+    This will do the following:  
         - Run the vagrant config file you copied to the vagrant folder 
-        - Create the first 3 virtual machines (Ansible Tower, 2 CentOS servers)
-        - Run through the server_access.yml file which will configure access to the VMS using ssh key pairs
+        - Create the first 3 virtual machines (Ansible Tower, 2 CentOS servers)  
+        - Run through the server_access.yml file which will configure access to the VMs using ssh key pairs  
+9. Once the vagrant up command finishes you would have to login to the Ansible Tower Server and add a subscription  
+    - For Red Hatters reach out to me internally if you are not sure how to get a sub for it
+    - For non-red hatters you can request a trial license here: https://www.ansible.com/products/tower/trial  
+
+===================================================================================  
+Now you have a fully functional Ansible Tower server with two CentOS VMs running.   
+You can access your Tower server and run playbooks etc.  
+Now is time to setup the 2 CentOS servers as web servers.  
+===================================================================================  
+
+<h2>Configuring CentOS servers as web servers</h2>
+<b>Instructions: </b>
+
