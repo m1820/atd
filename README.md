@@ -74,3 +74,5 @@ Now is time to setup the 2 CentOS servers as web servers.
 <h2>Configuring CentOS servers as web servers</h2>
 <b>Instructions: </b>
 
+1. 
+
