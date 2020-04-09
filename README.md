@@ -28,6 +28,21 @@ After following the instructions you will have the following:
 - Web page template with images that can be easy changed with a playbook (provided)  
 
 
+<b>Inventory:</b>
+
+Ansible Tower Server  
+192.168.50.10  
+https://127.0.0.1:8010  
+
+web1
+192.168.50.11
+http://127.0.0.1:8011
+
+web2
+192.168.50.12
+http://127.0.0.1:8012
+
+
 Instructions: 
 1. Download and install Virtual Box
 2. Download and install Vagrant
