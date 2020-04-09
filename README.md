@@ -36,4 +36,8 @@ Instructions:
 7. Open terminal navegate to the "vagrant" folder you created under "Documents"
 8. Run the following command  
     - vagrant up  
-    (This will run the vagrant config file you copied to the vagrant folder and create the first 3 virtual machines)
+    This will do the following:
+        - Run the vagrant config file you copied to the vagrant folder 
+        - Create the first 3 virtual machines (Ansible Tower, 2 CentOS servers)
+        - Run through the server_access.yml file which will configure access to the VMS using ssh keypairs
+        
