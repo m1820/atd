@@ -65,11 +65,11 @@ http://127.0.0.1:8012
     - For Red Hatters reach out to me internally if you are not sure how to get a sub for it
     - For non-red hatters you can request a trial license here: https://www.ansible.com/products/tower/trial  
 
-===================================================================================  
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++  
 Now you have a fully functional Ansible Tower server with two CentOS VMs running.   
 You can access your Tower server and run playbooks etc.  
 Now is time to setup the 2 CentOS servers as web servers.  
-===================================================================================  
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++  
 
 <h2>Configuring CentOS servers as web servers</h2>
 <b>Instructions: </b>
