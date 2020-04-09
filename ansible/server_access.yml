@@ -8,7 +8,7 @@
       register: keyresponse
     - name: Save public key to local file
       copy:
-        content: “{{ keyresponse|to_json }}”
+        content: "{{ keyresponse|to_json }}"
         dest: ~/Documents/vagrant/pub_key.json
       delegate_to: localhost
 - name: Setup servers with the new public key
@@ -22,4 +22,4 @@
       authorized_key:
         user: vagrant
         state: present
-        key: “{{ public_key }}”
+        key: "{{ public_key }}"
