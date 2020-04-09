@@ -46,6 +46,7 @@ http://127.0.0.1:8012
 
 <h2>Installing and running Ansible Tower Lab</h2>
 <b>Instructions: </b>
+
 1. Download and install Virtual Box
 2. Download and install Vagrant
 3. Install Ansible engine
