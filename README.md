@@ -68,8 +68,8 @@ http://127.0.0.1:8012
 ===================================================================================  
 Now you have a fully functional Ansible Tower server with two CentOS VMs running.   
 You can access your Tower server and run playbooks etc.  
-Now is time to setup the 2 CentOS servers as web servers.  
-===================================================================================  
+Now is time to setup the 2 CentOS servers as web servers. 
+===================================================================================</>
 
 <h2>Configuring CentOS servers as web servers</h2>
 <b>Instructions: </b>
