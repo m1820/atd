@@ -1,5 +1,5 @@
 # Ansible Demo Using Vagrant For Mac OS 
-Shared by Christian Trujillo
+Shared by Christian Trujillo  
 Big shutout to Jerry @Corumj !! who collaborated with me on this project  
 
 Hacked Websites Demo  
@@ -73,4 +73,6 @@ Now is time to setup the 2 CentOS servers as web servers.
 
 <h2>Configuring CentOS servers as web servers</h2>
 <b>Instructions: </b>
+
+1. 
 
