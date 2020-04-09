@@ -23,4 +23,3 @@
         user: vagrant
         state: present
         key: “{{ public_key }}”
-
