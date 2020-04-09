@@ -1,5 +1,5 @@
 # Ansible Demo Using Vagrant For Mac OS 
-Big shoutout to Jerry @Corumj !! who collaborated with me on this project  
+Big shutout to Jerry @Corumj !! who collaborated with me on this project  
 
 Hacked Websites Demo  
 (Images changed on website)
@@ -17,7 +17,8 @@ This was created with:
 
 
 The following instructions will help you create a demo/lab environment.  
-This demo will run locally on your Mac laptop/desktop
+This demo will run locally on your Mac laptop/desktop  
+Although
 
 
 After following the instructions you will have the following:  
@@ -28,17 +29,17 @@ After following the instructions you will have the following:
 
 
 Instructions: 
-1. Downoad and install Virtual Box
+1. Download and install Virtual Box
 2. Download and install Vagrant
 3. Install Ansible engine
     - https://docs.ansible.com/ansible/latest/installation_guide/intro_installation.html#id18  
 4. Create a folder called vagrant under "Documents"
 5. Copy "Vagrantfile" to the newly created folder
 6. Copy "server_access.yml" to the same folder
-7. Open terminal navegate to the "vagrant" folder you created under "Documents"
+7. Open terminal navigate to the "vagrant" folder you created under "Documents"
 8. Run the following command  
     - vagrant up  
     This will do the following:
         - Run the vagrant config file you copied to the vagrant folder 
         - Create the first 3 virtual machines (Ansible Tower, 2 CentOS servers)
-        - Run through the server_access.yml file which will configure access to the VMS using ssh keypairs
+        - Run through the server_access.yml file which will configure access to the VMS using ssh key pairs
