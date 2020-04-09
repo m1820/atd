@@ -4,6 +4,11 @@ Big shoutout to Jerry @Corumj !! who collaborated with me on this project
 Hacked Websites Demo  
 (Images changed on website)
 
+++++++++++++++++++  
+UNDER DEVELOPMENT   
+++++++++++++++++++  
+
+
 This was created with:  
 - Virtual Box 6.1.4 https://www.virtualbox.org/wiki/Downloads  
 - Vagrant 2.2.7 https://www.vagrantup.com/downloads.html  
@@ -21,9 +26,6 @@ After following the instructions you will have the following:
 - Ability to run provided playbook in Tower to configure both servers as webservers  
 - Web page template with images that can be easy changed with a playbook (provided)  
 
-++++++++++++++++++  
-UNDER DEVELOPMENT   
-++++++++++++++++++  
 
 Instructions: 
 1. Downoad and install Virtual Box
@@ -40,4 +42,3 @@ Instructions:
         - Run the vagrant config file you copied to the vagrant folder 
         - Create the first 3 virtual machines (Ansible Tower, 2 CentOS servers)
         - Run through the server_access.yml file which will configure access to the VMS using ssh keypairs
-        
