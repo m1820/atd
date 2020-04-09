@@ -1,5 +1,5 @@
 # Ansible Demo Using Vagrant For Mac OS 
-Big shoutout to Jerry!! who collaborated with me on this project  
+Big shoutout to Jerry @Corumj !! who collaborated with me on this project  
 
 Hacked Websites Demo  
 (Images changed on website)
