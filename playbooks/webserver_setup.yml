@@ -19,6 +19,10 @@
     service: 
       name: firewalld 
       state: restarted
+  - name: Delete existing website directory (during testing ONLY) /home/vagrant/websites
+    file:
+      path: /home/vagrant/websites
+      state: absent
   - name: Create websites directory under /home/vagrant/
     file:
       path: /home/vagrant/websites
