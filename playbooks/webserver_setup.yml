@@ -19,6 +19,10 @@
     service: 
       name: firewalld 
       state: restarted
+  - name: Create websites directory under /home/vagrant/
+    file:
+      path: /home/vagrant/websites
+      state: directory
   - name: Download website templates
     get_url:
       url: https://github.com/m1820/atd/blob/master/html_website_template/sites.tgz?raw=true
