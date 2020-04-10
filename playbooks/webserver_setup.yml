@@ -23,7 +23,7 @@
     file:
       path: /home/vagrant/websites
       state: directory
-      mode: '0755'
+      mode: '0777'
   - name: Download website templates
     get_url:
       url: https://github.com/m1820/atd/blob/master/html_website_template/sites.tgz?raw=true
