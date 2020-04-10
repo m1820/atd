@@ -52,8 +52,8 @@ http://127.0.0.1:8012
 3. Install Ansible engine
     - https://docs.ansible.com/ansible/latest/installation_guide/intro_installation.html#id18  
 4. Create a folder called vagrant under "Documents"
-5. Copy "Vagrantfile" to the newly created folder
-6. Copy "server_access.yml" to the same folder
+5. Copy "Vagrantfile" from the setup_files folder to the newly created folder
+6. Copy "server_access.yml" from the setup_files folder to the same folder
 7. Open terminal navigate to the "vagrant" folder you created under "Documents"
 8. Run the following command  
     - vagrant up  
