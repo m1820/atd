@@ -1,6 +1,6 @@
 ---
 - name: This sets up an httpd webserver
-  hosts: web1.local
+  hosts: all
   tasks:
   - name: Install apache packages 
     yum:
@@ -19,4 +19,3 @@
     service: 
       name: firewalld 
       state: restarted
-
