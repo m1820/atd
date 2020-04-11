@@ -2,12 +2,14 @@
 Created by Christian Trujillo  
 Big shutout to Jerry @Corumj !! who collaborated with me on this project  
 
-Hacked Websites Demo  
-(Images changed on website)
+This project was created to generate a portable, repeatable, Ansible Tower demo environment that can also be permanent. 
+There will be a base lab install that can stay permanent so your configurations can be saved everytime you want to use it.
 
-++++++++++++++++++  
-<b>UNDER DEVELOPMENT </b>  
-++++++++++++++++++  
+The demos will provide a way to create, recreate and destroy only the demo portion without hurgint the base lab environment. 
+
+++++++++++++++++++++++++++++++++
+<b>STILL UNDER DEVELOPMENT </b>  
+++++++++++++++++++++++++++++++++
 
 
 <b>This was created with: </b> 
