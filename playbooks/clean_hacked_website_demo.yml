@@ -1,5 +1,5 @@
 ---
-- name: Publishing our Website
+- name: Cleaning chacked website demo
   hosts: all
   tasks:
   - name: Remove the Apache package
