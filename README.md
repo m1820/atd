@@ -22,7 +22,7 @@ I have not tested so any help with this would be greatly appreciated.
 The following instructions will help you create a demo/lab environment.  
 This demo will run locally on your MacOS machine
 
-[Linux Demos](atd#linux-demo-config)
+[Linux Demos](#linux-demo-config)
 
 
 
