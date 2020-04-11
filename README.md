@@ -79,7 +79,7 @@ You can access your Tower server and run playbooks etc.
 Now you can select any of the available demos below. 
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++  
 
-<h2>Demos</h2>
+<h2>Demos - Instructions</h2>
 <ul>
   <li><a href="https://github.com/m1820/atd/blob/master/Demos/hacked_website_demo/Instructions.md">Hacked Website</a> </li> 
   <li><a href="https://github.com/m1820/atd/blob/master/Demos/hacked_website_demo/Instructions.md">Hacked Website</a> </li>
