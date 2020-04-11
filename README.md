@@ -82,7 +82,4 @@ Now you can select any of the available demos below.
 <h2>Demos - Instructions</h2>
 <ul>
   <li><a href="https://github.com/m1820/atd/blob/master/Demos/hacked_website_demo/Instructions.md">Hacked Website</a> </li> 
-  <li><a href="https://github.com/m1820/atd/blob/master/Demos/hacked_website_demo/Instructions.md">Hacked Website</a> </li>
 </ul>
-asdf
-test
