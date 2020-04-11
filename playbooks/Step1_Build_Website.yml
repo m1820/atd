@@ -1,0 +1,9 @@
+---
+- name: I am hacking your website
+  hosts: all
+  tasks:
+  - name: Copy website to /var/www/html
+    copy:
+      src: /home/vagrant/websites/sites/website/
+      dest: /var/www/html
+      remote_src: true 
