@@ -56,13 +56,13 @@ http://192.168.50.12
 3. Install Ansible engine
     - https://docs.ansible.com/ansible/latest/installation_guide/intro_installation.html#id18  
     - I experienced some issues with Ansible not running on MacOS I fixed it by running Installing Ansible in the followin way:  
-        '''
+        ,,,
         sudo su -
         export CFLAGS=-Qunused-arguments
         export CPPFLAGS=-Qunused-arguments 
         pip install ansible
         exit
-        '''
+        ,,,
         More info here: https://github.com/ansible/ansible/issues/7146 
 4. Create a folder called vagrant under "Documents"
 5. Copy "Vagrantfile" from the setup_files folder to the newly created folder
