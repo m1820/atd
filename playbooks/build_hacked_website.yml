@@ -1,5 +1,5 @@
 ---
-- name: This sets up an httpd webserver
+- name: I am hacking your website
   hosts: all
   tasks:
   - name: Create websites directory under /home/vagrant/

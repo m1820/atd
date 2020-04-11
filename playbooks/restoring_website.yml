@@ -1,0 +1,9 @@
+---
+- name: This will restore the original website
+  hosts: all
+  tasks:
+  - name: Copy hacked site to /var/www/html
+    copy:
+      src: /home/vagrant/websites/sites/website/
+      dest: /var/www/html
+      remote_src: true 
