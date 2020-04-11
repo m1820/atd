@@ -7,10 +7,10 @@
       name: httpd
       state: absent
   - name: Remove website files from /var/www/html
-      file:
+    file:
       path: /var/www/html/
       state: absent
   - name: Remove website files from /home/vagrant/websites
-      file:
+    file:
       path: /home/vagrant/website
       state: absent
