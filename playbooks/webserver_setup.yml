@@ -43,3 +43,4 @@
     unarchive:
       src: /home/vagrant/websites/sites.tgz
       dest: /home/vagrant/websites
+      remote_src: yes
