@@ -76,5 +76,9 @@ http://192.168.50.12
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++  
 Now you have a fully functional Ansible Tower server with two CentOS VMs running.   
 You can access your Tower server and run playbooks etc.  
-Now is time to setup the 2 CentOS servers as web servers. 
+Now you can select any of the available demos below. 
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++  
+
+<h2>Demos</h2>
+Hacked Website  
+
