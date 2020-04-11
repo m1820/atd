@@ -1,0 +1,48 @@
+---
+- name: This sets up an httpd webserver
+  hosts: all
+  tasks:
+#  - name: Change file permissions /var/www/
+#    file:
+#      path: /var/www/
+#      state: directory
+#      recurse: yes
+#      owner: vagrant
+#      group: vagrant
+#      mode: '0755'
+# - name: Delete existing website directory (during testing ONLY) /home/vagrant/websites
+#   file:
+#     path: /home/vagrant/websites
+#     state: absent
+  - name: Create websites directory under /home/vagrant/
+    file:
+      path: /home/vagrant/websites
+      state: directory
+      owner: vagrant
+      group: vagrant
+      mode: '0755'
+  - name: Download website templates
+    get_url:
+      url: https://github.com/m1820/atd/blob/master/sites/sites.tgz?raw=true
+      dest: /home/vagrant/websites
+  - name: Extract sites.tgz into /home/vagrant/websites
+    unarchive:
+      src: /home/vagrant/websites/sites.tgz
+      dest: /home/vagrant/websites
+      remote_src: yes
+#  - name: Change file permissions /home/vagrant/websites/sites.tgz
+#    file:
+#      path: /home/vagrant/websites/sites
+#      state: directory
+#      recurse: yes
+#      owner: vagrant
+#      group: vagrant
+#      mode: '0755'
+#  - name: Copy hacked site to /var/www/html
+#    copy:
+#      src: /home/vagrant/websites/sites/hacked/
+#      dest: /var/www/html
+#      owner: vagrant
+#      group: vagrant
+#      mode: '0644'
+#      remote_src: true 
