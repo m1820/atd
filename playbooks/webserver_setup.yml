@@ -47,3 +47,5 @@
       owner: vagrant
       group: vagrant
       mode: '0755'
+  - name: Copy hacked site
+      copy: src=/home/vagrant/websites/sites/hacked/* dest=/var/www/html/

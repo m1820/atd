@@ -33,15 +33,15 @@ Although
 
 Ansible Tower Server  
 192.168.50.10  
-https://127.0.0.1:8010  
+https://192.168.50.10
 
 web1  (CentOS)
 192.168.50.11  
-http://127.0.0.1:8011  
+http://192.168.50.11
 
 web2  (CentOS)
 192.168.50.12  
-http://127.0.0.1:8012  
+http://192.168.50.12  
 
 
 <h2>Installing and running Ansible Tower Lab</h2>
@@ -64,6 +64,10 @@ http://127.0.0.1:8012
 9. Once the vagrant up command finishes you would have to login to the Ansible Tower Server and add a subscription  
     - For Red Hatters reach out to me internally if you are not sure how to get a sub for it
     - For non-red hatters you can request a trial license here: https://www.ansible.com/products/tower/trial  
+10. Once you get the trial subscription for tower you will need to find out the login credentials to access Tower:
+    - On the terminal window under the same vagrant directory type: vagrant ssh tower
+    - As soon as you login you will see the user name and password for the Tower server
+11. Within Tower go the user section and change the admin password to something you can remember
 
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++  
 Now you have a fully functional Ansible Tower server with two CentOS VMs running.   
@@ -74,5 +78,6 @@ Now is time to setup the 2 CentOS servers as web servers.
 <h2>Configuring CentOS servers as web servers</h2>
 <b>Instructions: </b>
 
-1. 
+1. Login to Ansible Tower
+2. 
 
