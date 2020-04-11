@@ -23,7 +23,8 @@ Although
 
 <h1>Demos</h1>
 <h2>Hacked Website</h2>  
-<b>After following the instructions you will have the following:  </b>
+<b>After following the instructions you will have the following:</b>  
+
 - Ansible Tower Server  
 - 2 CentOS servers (to be configured as web servers)  
 - Ability to run provided playbook in Tower to configure both servers as webservers  
