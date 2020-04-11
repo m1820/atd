@@ -32,7 +32,7 @@
       mode: '0755'
   - name: Download website templates
     get_url:
-      url: https://github.com/m1820/atd/blob/master/html_website_template/sites.tgz?raw=true
+      url: https://github.com/m1820/atd/blob/master/sites/sites.tgz?raw=true
       dest: /home/vagrant/websites
   - name: Extract sites.tgz into /home/vagrant/websites
     unarchive:
