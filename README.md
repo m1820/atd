@@ -22,8 +22,8 @@ I have not tested so any help with this would be greatly appreciated.
 The following instructions will help you create a demo/lab environment.  
 This demo will run locally on your MacOS machine
 
-[Linux Demos](#linux-demo-config)
-[Windows Demos](#windows-demo-config)
+[Linux Demos](#linux-demo-config)  
+[Windows Demos](#windows-demo-config)  
 
 
 # Linux Demo Config
@@ -96,6 +96,7 @@ Now you can run any of the available demos below.
 # Windows Demo Config
 
 <h2>Demos - Instructions</h2>
+<h3> Linux Demos </h3>
 <ul>
   <li><a href="https://github.com/m1820/atd/blob/master/Demos/Linux/hacked_website_demo/Instructions.md">Hacked Website</a> </li> 
 </ul>
