@@ -43,6 +43,7 @@
     file:
       path: /home/vagrant/websites/sites
       state: directory
+      recurse: yes
       owner: vagrant
       group: vagrant
       mode: '0755'
