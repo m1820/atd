@@ -3,7 +3,7 @@
   hosts: all
   tasks:
   - name: Remove the Apache package
-      yum:
+    yum:
       name: httpd
       state: absent
   - name: Remove website files from /var/www/html
