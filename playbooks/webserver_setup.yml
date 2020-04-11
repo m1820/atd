@@ -27,6 +27,8 @@
     file:
       path: /home/vagrant/websites
       state: directory
+      owner: vagrant
+      group: vagrant
       mode: '0755'
   - name: Download website templates
     get_url:
@@ -35,9 +37,6 @@
   - name: Change file permissions /home/vagrant/websites/sites.tgz
     file:
       path: /home/vagrant/websites/sites.tgz
-      owner: vagrant
-      group: vagrant
-      mode: 0644
  # - name: Rename sites.tgz?raw=true to sites.tgz
   #  command: mv /home/vagrant/websites/sites.tgz?raw=true /home/vagrant/websites/sites.tgz
   - name: Extract sites.tgz into /home/vagrant/websites
