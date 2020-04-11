@@ -41,10 +41,12 @@ tower
 192.168.50.10  
 https://192.168.50.10
 
+Static Website
 web1  (CentOS7)  
 192.168.50.11  
 
-web2  (CentOS7)  
+Wordpress
+web2 (CentOS7)  
 192.168.50.12  
 
 <h2>Installing and running Ansible Tower Lab</h2>
