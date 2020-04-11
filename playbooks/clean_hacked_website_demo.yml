@@ -12,5 +12,5 @@
       state: absent
   - name: Remove website files from /home/vagrant/websites
     file:
-      path: /home/vagrant/website
+      path: /home/vagrant/website/
       state: absent
