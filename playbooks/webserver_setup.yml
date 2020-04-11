@@ -32,9 +32,9 @@
     get_url:
       url: https://github.com/m1820/atd/blob/master/html_website_template/sites.tgz?raw=true
       dest: /home/vagrant/websites
-  - name: Rename sites.tgz?raw=true to sites.tgz
-    command: mv /home/vagrant/websites/sites.tgz?raw=true /home/vagrant/websites/sites.tgz
-  - name: Extract sites.tgz into /home/vagrant/websites
-    unarchive:
-      src: /home/vagrant/websites/sites.tgz
-      dest: /home/vagrant/websites
+ # - name: Rename sites.tgz?raw=true to sites.tgz
+  #  command: mv /home/vagrant/websites/sites.tgz?raw=true /home/vagrant/websites/sites.tgz
+  #- name: Extract sites.tgz into /home/vagrant/websites
+   # unarchive:
+    #  src: /home/vagrant/websites/sites.tgz
+     # dest: /home/vagrant/websites
