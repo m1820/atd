@@ -41,11 +41,11 @@ tower
 192.168.50.10  
 https://192.168.50.10
 
-Static Website
+Static Website  
 web1  (CentOS7)  
 192.168.50.11  
 
-Wordpress
+Wordpress  
 web2 (CentOS7)  
 192.168.50.12  
 
