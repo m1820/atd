@@ -21,8 +21,8 @@ The following instructions will help you create a demo/lab environment.
 This demo will run locally on your Mac laptop/desktop  
 Although
 
-<h1>Demos</h1>
-<h2>Hacked Website</h2>  
+<h1>Lab Configuration</h1>
+<h2>Base lab configuration to be use with all the available demos</h2>  
 
 <b>After following the instructions you will have the following:</b>  
 
@@ -78,10 +78,3 @@ Now you have a fully functional Ansible Tower server with two CentOS VMs running
 You can access your Tower server and run playbooks etc.  
 Now is time to setup the 2 CentOS servers as web servers. 
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++  
-
-<h2>Configuring CentOS servers as web servers</h2>
-<b>Instructions: </b>
-
-1. Login to Ansible Tower
-2. 
-
