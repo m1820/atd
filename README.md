@@ -34,14 +34,15 @@ Although
 <b>Inventory:</b>
 
 Ansible Tower Server  
+tower
 192.168.50.10  
 https://192.168.50.10
 
-web1  (CentOS)
+web1  (CentOS7)  
 192.168.50.11  
 http://192.168.50.11
 
-web2  (CentOS)
+web2  (CentOS7)  
 192.168.50.12  
 http://192.168.50.12  
 
