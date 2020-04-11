@@ -93,7 +93,7 @@ Its time to setup your playbooks
    - On the bottom right under Options select Enable Privilege Escalation
    - Click save
  
- ### Running Demo
+ ### Running The Demo
  
 1. Install and configure the web server
    - From the Tower server go to Resources>Templates 
