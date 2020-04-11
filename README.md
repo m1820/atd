@@ -23,7 +23,7 @@ The following instructions will help you create a demo/lab environment.
 This demo will run locally on your MacOS machine
 
 [Linux Demos](#linux-demo-config)
-
+[Windows Demos](#windows-demo-config)
 
 
 # Linux Demo Config
@@ -92,6 +92,8 @@ Now you have a fully functional Ansible Tower server with two CentOS VMs running
 You can access your Tower server and run playbooks etc.  
 Now you can run any of the available demos below. 
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++  
+
+# Windows Demo Config
 
 <h2>Demos - Instructions</h2>
 <ul>
