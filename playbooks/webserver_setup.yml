@@ -34,6 +34,13 @@
     get_url:
       url: https://github.com/m1820/atd/blob/master/html_website_template/sites.tgz?raw=true
       dest: /home/vagrant/websites
+  - name: Change file permissions /home/vagrant/websites/sites.tgz
+    file:
+      path: /home/vagrant/websites/sites.tgz
+      state: directory
+      owner: vagrant
+      group: vagrant
+      mode: '0755'
   - name: Extract sites.tgz into /home/vagrant/websites
     unarchive:
       src: /home/vagrant/websites/sites.tgz
