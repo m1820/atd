@@ -56,20 +56,20 @@ http://192.168.50.12
 3. Install Ansible engine
     - https://docs.ansible.com/ansible/latest/installation_guide/intro_installation.html#id18  
     - I experienced some issues with Ansible not running on MacOS I fixed it by running Installing Ansible in the followin way:  
-        ,,,
+       ```
         sudo su -
         export CFLAGS=-Qunused-arguments
         export CPPFLAGS=-Qunused-arguments 
         pip install ansible
         exit
-        ,,,
+        ```
         More info here: https://github.com/ansible/ansible/issues/7146 
 4. Create a folder called vagrant under "Documents"
 5. Copy "Vagrantfile" from the setup_files folder to the newly created folder
 6. Copy "server_access.yml" from the setup_files folder to the same folder
 7. Open terminal navigate to the "vagrant" folder you created under "Documents"
 8. Run the following command  
-    - vagrant up  
+    `vagrant up ` 
     This will do the following:  
         - Run the vagrant config file you copied to the vagrant folder 
         - Create the first 3 virtual machines (Ansible Tower, 2 CentOS servers)  
