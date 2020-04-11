@@ -50,7 +50,7 @@
   - name: Copy hacked site to /var/www/html
     copy:
       src: /home/vagrant/websites/sites/hacked/
-      dest: /var/www/html/
+      dest: /var/www/html
       owner: vagrant
       group: vagrant
       mode: '0644'
