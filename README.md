@@ -26,7 +26,7 @@ This demo will run locally on your MacOS machine
 
 
 <h1>Lab Configuration</h1>
-<h2>Base lab configuration to be use with all the available Linux Demos</h2>  
+<h2>Base lab configuration to be use with all the available Demos</h2>  
 
 <b>After following the instructions you will have the following:</b>  
 
