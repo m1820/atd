@@ -95,6 +95,20 @@ Its time to setup your playbooks
  
  ### Running Demo
  
- 1. Install and configure web server
+1. Install and configure the web server
    - From the Tower server go to Resources>Templates 
-   - Click on the rocket icon for the webserver setup playbook you created
+   - Click on the rocket icon for STEP1 to setup the webserver setup from the template you created
+2. Build the demo website
+   - From the Tower server go to Resources>Templates 
+   - Click on the rocket icon for STEP2 to build the website from the template you created
+3. Hack the demo website
+   - From the Tower server go to Resources>Templates 
+   - Click on the rocket icon for STEP3 to hack the website from the template you created
+4. Restore the demo website
+   - From the Tower server go to Resources>Templates 
+   - Click on the rocket icon for STEP4 to restore the website from the template you created
+   
+## Clean up demo to run again in the future
+1. Clean up demo
+   - From the Tower server go to Resources>Templates 
+   - Click on the rocket icon for the hacked demo cleanup playbook from the template you created
