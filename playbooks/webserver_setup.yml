@@ -19,6 +19,14 @@
     service: 
       name: firewalld 
       state: restarted
+  - name: Change file permissions /var/www/
+    file:
+      path: /var/www/
+      state: directory
+      recurse: yes
+      owner: vagrant
+      group: vagrant
+      mode: '0755'
  # - name: Delete existing website directory (during testing ONLY) /home/vagrant/websites
  #   file:
  #     path: /home/vagrant/websites
