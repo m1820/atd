@@ -22,6 +22,11 @@ I have not tested so any help with this would be greatly appreciated.
 The following instructions will help you create a demo/lab environment.  
 This demo will run locally on your MacOS machine
 
+[Linux Demos](https://github.com/m1820/atd/edit/master/README.md#linux-demo-config)
+
+
+
+
 <h1>Lab Configuration</h1>
 <h2>Base lab configuration to be use with all the available Linux Demos</h2>  
 
@@ -43,7 +48,7 @@ web1  (CentOS7)
 web2  (CentOS7)  
 192.168.50.12  
 
-
+# Linux Demo Config
 <h2>Installing and running Ansible Tower Lab</h2>
 <b>Instructions: </b>
 
