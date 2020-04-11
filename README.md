@@ -1,11 +1,11 @@
 # Ansible Tower Demos Using Vagrant For Mac OS 
 Created by Christian Trujillo  
-Big shutout to Jerry @Corumj !! who collaborated with me on this project  
+Thank you Jerry @Corumj for your help with this!!
 
-This project was created to generate a portable, repeatable, Ansible Tower demo environment that can also be permanent. 
-There will be a base lab install that can stay permanent so your configurations can be saved everytime you want to use it.
+This project was created to generate a stable, portable, and permanent, Ansible Tower lab environment.
+The idea is to have a lab environment that can stay permanent so your configurations can be saved everytime you want to use it.
 
-The demos will provide a way to create, recreate and destroy only the demo portion without hurgint the base lab environment. 
+The demos will provide a way to create, recreate and destroy only the demo portion without hurting the base environment. 
 
 ++++++++++++++++++++++++++++++++  
 <b>STILL UNDER DEVELOPMENT </b>  
@@ -24,11 +24,7 @@ I have not tested so any help with this would be greatly appreciated.
 The following instructions will help you create a demo/lab environment.  
 This demo will run locally on your MacOS machine
 
-[Linux Demos](#linux-demo-config)  
-[Windows Demos](#windows-demo-config)  
 
-
-# Linux Demo Config
 <h1>Lab Configuration</h1>
 <h2>Base lab configuration to be use with all the available Linux Demos</h2>  
 
@@ -36,6 +32,7 @@ This demo will run locally on your MacOS machine
 
 - Ansible Tower Server  
 - 2 CentOS servers
+- 2 Windows Machiens (available soon)
 
 <b>Inventory:</b>
 
@@ -95,10 +92,13 @@ You can access your Tower server and run playbooks etc.
 Now you can run any of the available demos below. 
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++  
 
-# Windows Demo Config
 
 <h2>Demos - Instructions</h2>
 <h3> Linux Demos </h3>
 <ul>
   <li><a href="https://github.com/m1820/atd/blob/master/Demos/Linux/hacked_website_demo/Instructions.md">Hacked Website</a> </li> 
+</ul>
+<h3> Windows Demos </h3>
+<ul>
+  <li><a href="#">Coming Soon</a> </li> 
 </ul>
