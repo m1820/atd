@@ -32,7 +32,7 @@ This demo will run locally on your MacOS machine
 
 - Ansible Tower Server  
 - 2 CentOS servers
-- 2 Windows Machiens (available soon)
+- 2 Windows Machiens (coming soon)
 
 <b>Inventory:</b>
 
