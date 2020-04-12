@@ -2,91 +2,79 @@
 - name: install dependencies
   package:
     name:
-      - httpd 
-      - mariadb 
-      - mariadb-server 
-      - php 
-      - php-pdo_mysql 
-      - php-xml 
-      - php-gd 
-      - wget 
+      - httpd
+      - mariadb
+      - mariadb-server
+      - php
+      - php-pdo_mysql
+      - php-xml
+      - php-gd
+      - wget
       - nano
       - policycoreutils-python
       - MySQL-python
     state: installed
-
 - name: create wordpress dir
   file:
-    path: "/var/www/html/{{ domain }}"
+    path: '/var/www/html/{{ domain }}'
     state: directory
     owner: apache
     group: apache
-    mode: 0755
-
+    mode: 493
 - name: get wordpress
   unarchive:
-    src: https://wordpress.org/latest.tar.gz
-    dest: /var/www/html/{{ domain }}
-    extra_opts: --strip=1
-    remote_src: yes
+    src: 'https://wordpress.org/latest.tar.gz'
+    dest: '/var/www/html/{{ domain }}'
+    extra_opts: '--strip=1'
+    remote_src: 'yes'
     owner: vagrant
     group: vagrant
   notify: get API information
-
 - name: start mariadb
   service:
     name: mariadb
     state: started
     enabled: true
-
 - name: create database
   mysql_db:
-    name: "wp_{{ domain }}_db"
+    name: 'wp_{{ domain }}_db'
     state: present
-
 - name: create database user
   mysql_user:
-    name: "{{ db_user }}"
-    password: "{{ db_pass }}"
+    name: '{{ db_user }}'
+    password: '{{ db_pass }}'
     priv: '{{ db_name }}.*:ALL,GRANT'
   notify: secure mariadb
-
 - name: run API handler now
   meta: flush_handlers
-
 - name: set mariadb root password
   mysql_user:
     name: vagrant
-    password: "{{ root_db_pass }}"
-
+    password: '{{ root_db_pass }}'
 - name: copy template
   template:
     src: wp-config.j2
-    dest: /var/www/html/{{ domain }}/wp-config.php
-
+    dest: '/var/www/html/{{ domain }}/wp-config.php'
 - name: copy httpd template
   template:
     src: httpd.j2
     dest: /etc/httpd/conf/httpd.conf
     owner: vagrant
     group: vagrant
-    mode: 0644
-
+    mode: 420
 - name: start httpd
   service:
     name: httpd
     state: started
     enabled: true
-
 - name: ensure firewalld is running
   service:
     name: firewalld
     state: started
     enabled: true
-
 - name: open firewall services
   firewalld:
-    service: "{{ item }}"
+    service: '{{ item }}'
     permanent: true
     state: enabled
     immediate: true
