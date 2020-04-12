@@ -1,6 +1,6 @@
 ---
 - name: Publishing our Website
-  hosts: all
+  hosts: 192.168.1.11
   tasks:
   - name: Create websites directory under /home/vagrant/
     file:

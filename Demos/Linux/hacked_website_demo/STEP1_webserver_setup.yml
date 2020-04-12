@@ -1,6 +1,6 @@
 ---
 - name: This sets up an httpd webserver
-  hosts: all
+  hosts: 192.168.1.11
   tasks:
   - name: Install apache packages 
     yum:
