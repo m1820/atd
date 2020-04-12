@@ -1,6 +1,6 @@
 # Ansible Tower Demos Using Vagrant For Mac OS 
 Created by Christian Trujillo  
-Thank you Jerry @Corumj for your help with this!!
+Thank you Jerry @Corumj for your help!!
 
 This project was created to generate a stable, portable, and permanent, Ansible Tower lab environment.
 The idea is to have a lab environment that can stay permanent so your configurations can be saved everytime you want to use it.
@@ -41,10 +41,12 @@ tower
 192.168.50.10  
 https://192.168.50.10
 
+Static Website  
 web1  (CentOS7)  
 192.168.50.11  
 
-web2  (CentOS7)  
+Wordpress  
+web2 (CentOS7)  
 192.168.50.12  
 
 <h2>Installing and running Ansible Tower Lab</h2>
