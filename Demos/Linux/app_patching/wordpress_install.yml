@@ -1,6 +1,4 @@
 --- 
 - hosts: 192.168.50.12
   roles:
-    - role: 'atd/roles/wpi'
-
-
+    - role: 'atd/roles/wpi/tasks/main.yml'

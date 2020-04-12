@@ -34,7 +34,7 @@
   ignore_errors: yes      
   tags: database
 - name: Creating wordpress DB with the Root User
-  mysql_db: name={{ wordpress_db }} state=present login_user=root login_password={{ mysql_root_password }} host=localhost
+  mysql_db: name={{ wordpress_db }} state=present login_user=root login_password={{ mysql_root_password }}
   ignore_errors: yes
   tags: database
 - name: Creating wordpress user and give him all privileges on wordpress db
