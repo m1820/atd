@@ -1,6 +1,6 @@
 ---
 - name: This will restore the original website
-  hosts: 192.168.1.11
+  hosts: 192.168.50.11
   tasks:
   - name: Copy hacked site to /var/www/html
     copy:

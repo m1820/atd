@@ -1,6 +1,6 @@
 ---
 - name: Cleaning chacked website demo
-  hosts: 192.168.1.11
+  hosts: 192.168.50.11
   tasks:
   - name: Remove the Apache package
     yum:
