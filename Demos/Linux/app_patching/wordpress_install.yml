@@ -12,11 +12,11 @@
   - name: LAMP installation
     yum: name={{ item }} state=present
     with_items:
-     - httpd24
+     - httpd
      - mysql-server
-     - php56
-     - php56-mysqlnd
-     - MySQL-python27
+     - php
+     - php-mysqlnd
+     - MySQL-python
   - name: Removing httpd welcome page from webserver
     file:
       path: "/etc/httpd/conf.d/welcome.conf"
