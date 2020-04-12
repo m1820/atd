@@ -1,7 +1,6 @@
----
-- name: Install Wordpress
-  hosts: 192.168.50.12
+--- 
+- hosts: 192.168.50.12
   roles:
-    - gsfjohnson.wordpress
+   - gsfjohnson.wordpress
 
 
