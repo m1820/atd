@@ -75,5 +75,5 @@
     - name: starting httpd and mysqld
        service: name={{ item }} state=restarted
        with_items:
-         - httpd
-         - mysqld
+          - httpd
+          - mysqld
