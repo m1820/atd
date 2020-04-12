@@ -9,14 +9,32 @@
    wp_mysql_password: tensult
    wp_mysql_host: "{{ansible_default_ipv4.address}}"
   tasks:
-  - name: LAMP installation
-    yum: name={{ item }} state=present
-    with_items:
-     - httpd
-     - mysql-server
-     - php
-     - php-mysqlnd
-     - MySQL-python
+    - name: install httpd
+      yum:
+        name: httpd
+
+    - name: install php
+      yum: name={{item}} state=installed
+      with_items:  
+      - php
+      - php-mysql
+      - php-pdo
+      - php-gd
+      - php-mbstring
+      
+    - name: copy file
+      shell: echo "<?php phpinfo (); ?>" > /var/www/html/info.php
+
+    - name: install mariadb
+      yum: name={{item}} state=installed
+      with_items:
+      - mariadb-server
+      - mariadb
+    
+    - name: restart httpd
+      service:
+        name: httpd
+        state: restarted
   - name: Removing httpd welcome page from webserver
     file:
       path: "/etc/httpd/conf.d/welcome.conf"
