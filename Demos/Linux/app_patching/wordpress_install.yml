@@ -1,6 +1,6 @@
 --- 
 - hosts: 192.168.50.12
   roles:
-   - inmotionhosting.wordpress_ultrastack
+   - mina_maher.ansible_wordpress_role
 
 

@@ -1,3 +1,3 @@
 ---
 # Wordpress Role From Ansible Galaxy
-- src: inmotionhosting.wordpress_ultrastack
+- src: mina_maher.ansible_wordpress_role
