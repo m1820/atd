@@ -1,0 +1,8 @@
+# #Password for MariaDB Root user
+mysql_root_password: "123456789"
+## WordPress-DatBase Name:
+wordpress_db: "wordpress"
+##Wordpress DataBase UserName:
+wordpress_dbuser: "wordpress"
+## WordPress DataBase Password
+wordpress_dbpass: "123456789"
