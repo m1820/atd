@@ -1,3 +1,3 @@
 ---
 # Wordpress Role From Ansible Galaxy
-- src: acandid.mariadb_apache_wordpress
+- src: darthwade.wordpress
