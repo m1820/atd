@@ -1,2 +1,4 @@
 # Wordpress Role From Ansible Galaxy
-- src: gsfjohnson.wordpress
+  name: ntp
+  src:  git@gitlab.com:gsfjohnson/ansible-role-wordpress
+  scm: git
