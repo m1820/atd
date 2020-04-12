@@ -1,77 +1,95 @@
----
-# Refer this for documentation: https://blogs.tensult.com/2019/11/14/automating-wordpress-installation-using-ansible-on-multiple-nodes/
-- name: Wordpress Installation
-  hosts: 192.168.50.12
-  become: yes
-  vars:
-   wp_mysql_db: wordpress
-   wp_mysql_user: wp-admin
-   wp_mysql_password: tensult
-   wp_mysql_host: "{{ansible_default_ipv4.address}}"
-  tasks:
-    - name: install httpd
-      yum:
-        name: httpd
+# tasks file for wordpress https://mangolassi.it/topic/15423/ansible-wordpress-install
+- name: install dependencies
+  package:
+    name:
+      - httpd 
+      - mariadb 
+      - mariadb-server 
+      - php 
+      - php-pdo_mysql 
+      - php-xml 
+      - php-gd 
+      - wget 
+      - nano
+      - policycoreutils-python
+      - MySQL-python
+    state: installed
 
-    - name: install php
-      yum: name={{item}} state=installed
-      with_items:  
-      - php
-      - php-mysql
-      - php-pdo
-      - php-gd
-      - php-mbstring
-      
-    - name: copy file
-      shell: echo "<?php phpinfo (); ?>" > /var/www/html/info.php
+- name: create wordpress dir
+  file:
+    path: "/var/www/html/{{ domain }}"
+    state: directory
+    owner: apache
+    group: apache
+    mode: 0755
 
-    - name: install mariadb
-      yum: name={{item}} state=installed
-      with_items:
-      - mariadb-server
-      - mariadb
-    
-    - name: restart httpd
-      service:
-        name: httpd
-        state: restarted
-    - name: Removing httpd welcome page from webserver
-      file:
-        path: "/etc/httpd/conf.d/welcome.conf"
-        state: absent
-    - name: Downloading wordpress to document root of remote nodes
-      unarchive:
-        src: http://www.wordpress.org/latest.tar.gz
-        dest: /var/www/html/
-        remote_src: yes
-    - name: Renaming sample wordpress configuration from webserver
-      command: "mv /var/www/html/wordpress/wp-config-sample.php /var/www/html/wordpress/wp-config.php"
-    - name: Update WordPress config file
-      lineinfile: dest=/var/www/html/wordpress/wp-config.php regexp={{ item.regexp }} line={{ item.line }}
-      with_items:
-        - {'regexp': "define\\( 'DB_NAME', '(database_name_here)+' \\);", 'line': "define('DB_NAME', '{{wp_mysql_db}}');"}
-        - {'regexp': "define\\( 'DB_USER', '(username_here)+' \\);", 'line': "define('DB_USER', '{{wp_mysql_user}}');"}
-        - {'regexp': "define\\( 'DB_PASSWORD', '(password_here)+' \\);", 'line': "define('DB_PASSWORD', '{{wp_mysql_password}}');"}
-        - {'regexp': "define\\( 'DB_HOST', '(localhost)+' \\);", 'line': "define('DB_HOST', '{{wp_mysql_host}}');"}
-    - name: Update default Apache site
-      lineinfile: dest=/etc/httpd/conf/httpd.conf line="DocumentRoot /var/www/html/wordpress"
-    - name: Starting the mysqld service
-      service:
-        name: mysqld
-        state: started
-    - name: Creating database for wordpress
-      mysql_db:
-        name: "{{wp_mysql_db}}"
-        state: present
-    - name: Creating user for wordpress and allow all permissions to db wordpress
-      mysql_user:
-         name: "{{wp_mysql_user}}"
-         password: "{{wp_mysql_password}}"
-         host: '%'
-         priv: '*.*:ALL'
-         state: present
-    - name: starting httpd and mysqld
-      service: name={{ item }} state=restarted
-      with_items:
-        - httpd
-        - mysqld
+- name: get wordpress
+  unarchive:
+    src: https://wordpress.org/latest.tar.gz
+    dest: /var/www/html/{{ domain }}
+    extra_opts: --strip=1
+    remote_src: yes
+    owner: vagrant
+    group: vagrant
+  notify: get API information
+
+- name: start mariadb
+  service:
+    name: mariadb
+    state: started
+    enabled: true
+
+- name: create database
+  mysql_db:
+    name: "wp_{{ domain }}_db"
+    state: present
+
+- name: create database user
+  mysql_user:
+    name: "{{ db_user }}"
+    password: "{{ db_pass }}"
+    priv: '{{ db_name }}.*:ALL,GRANT'
+  notify: secure mariadb
+
+- name: run API handler now
+  meta: flush_handlers
+
+- name: set mariadb root password
+  mysql_user:
+    name: vagrant
+    password: "{{ root_db_pass }}"
+
+- name: copy template
+  template:
+    src: wp-config.j2
+    dest: /var/www/html/{{ domain }}/wp-config.php
+
+- name: copy httpd template
+  template:
+    src: httpd.j2
+    dest: /etc/httpd/conf/httpd.conf
+    owner: vagrant
+    group: vagrant
+    mode: 0644
+
+- name: start httpd
+  service:
+    name: httpd
+    state: started
+    enabled: true
+
+- name: ensure firewalld is running
+  service:
+    name: firewalld
+    state: started
+    enabled: true
+
+- name: open firewall services
+  firewalld:
+    service: "{{ item }}"
+    permanent: true
+    state: enabled
+    immediate: true
+  with_items:
+    - https
+    - http
