@@ -23,7 +23,7 @@ All the playbooks are labled from Step 1 to Step 4
    - Give it a name and save
    - Under the newly created inventory click on hosts
    - Click on the plus sign to add a new host
-   - Under host name add the IP address of the first sever web1 (192.168.50.11)
+   - Under host name add the IP address of the web1 (192.168.50.11)
  3. Add a project:
    - Resources > Projects > Plus sign to add new project
    - For the SCM type select git 
