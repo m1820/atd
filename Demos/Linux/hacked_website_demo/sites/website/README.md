@@ -1,4 +1,4 @@
-# [Global: HTML5 website template](http://buckymaler.com/global)
+# Global: HTML5 website template
 
 ### [Featured on Freebiesbug](http://freebiesbug.com/psd-freebies/global-futuristic-one-page-portfolio-psd-html/)
 
@@ -10,9 +10,14 @@ This project was developed with HTML5, Sass, jQuery, and Hammer.js.
 
 Performance basics are covered: assets are minified into single CSS and JS files, and the images are optimized.
 
-[LIVE PREVIEW](http://buckymaler.com/global)
+[LIVE PREVIEW](https://christiantrujillo.com/rh/hw/site)
 
 ## Misc:
 
+* Follow Me: [Twitter](https://twitter.com/hciadvisor), [GitHub](https://github.com/m1820)
+
+
+Thanks to the orignial author Bucky:
 * Follow Bucky: [Twitter](https://twitter.com/BuckyMaler), [GitHub](https://github.com/BuckyMaler)
 * Follow Sergey: [Dribbble](https://dribbble.com/sergeymelnik), [Bēhance](https://www.behance.net/SergeyMelnik)
+[Global: HTML5 website template](http://buckymaler.com/global)
