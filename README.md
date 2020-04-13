@@ -98,7 +98,7 @@ Now you can run any of the available demos below.
 <h2>Demos - Instructions</h2>
 <h3> Linux Demos </h3>
 <ul>
-  <li><a href="https://github.com/m1820/atd/blob/master/Demos/Linux/hacked_website_demo/Instructions.md">Hacked Website</a> </li> 
+  <li><a href="https://github.com/m1820/atd/blob/master/Demos/Linux/hacked_website_demo/">Hacked Website</a> </li> 
 </ul>
 <h3> Windows Demos </h3>
 <ul>
