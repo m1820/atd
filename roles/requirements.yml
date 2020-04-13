@@ -1,4 +1,3 @@
 ---
-# Wordpress Role From Ansible Galaxy
-# - src: mina_maher.ansible_wordpress_role
+# Wordpress Role From GitHub
 - src: https://github.com/m1820/wprole
