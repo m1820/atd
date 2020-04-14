@@ -2,6 +2,10 @@
 Created by Christian Trujillo  
 Thank you Jerry @Corumj for your help!!
 
+I have created an instructional video to walk you through the setup:
+
+[Ansible Tower Lab Setup Video](https://youtu.be/BIPPMMC2GmA)
+
 This project was created to generate a stable, portable, and permanent, Ansible Tower lab environment.
 The idea is to have a lab environment that can stay permanent so your configurations can be saved everytime you want to use it.
 
