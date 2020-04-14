@@ -10,13 +10,13 @@ Vagrant.configure("2") do |config|
     tower.vm.network "forwarded_port", guest: 80, host: 8010
   end
   config.vm.define "web1" do |web1|
-    web1.vm.box = "generic/centos7"
+    web1.vm.box = "generic/fedora31"
     web1.vm.network "private_network", ip: "192.168.50.11"
     web1.vm.hostname = "web1"
     web1.vm.network "forwarded_port", guest: 80, host: 8011
   end
   config.vm.define "web2" do |web2|
-    web2.vm.box = "generic/centos7"
+    web2.vm.box = "generic/fedora32"
     web2.vm.network "private_network", ip: "192.168.50.12"
     web2.vm.hostname = "web2"
     web2.vm.network "forwarded_port", guest: 80, host: 8012
