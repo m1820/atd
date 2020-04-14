@@ -1,4 +1,3 @@
-STEP2_TEST.yml
 ---
 - name: Publishing our Website
   hosts: 192.168.50.11
