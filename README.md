@@ -56,20 +56,6 @@ web2 (Fedora32)
 2. Download and install Vagrant
 3. # Install Ansible engine
     - https://docs.ansible.com/ansible/latest/installation_guide/intro_installation.html#id18  
-    - I experienced some issues with Ansible not running on MacOS I fixed it by Installing Ansible in the following way:  
-       ```
-        sudo su -
-        export CFLAGS=-Qunused-arguments
-        export CPPFLAGS=-Qunused-arguments 
-        pip install ansible
-        exit
-        ```
-     NOTE: For more info on this issue go here: https://github.com/ansible/ansible/issues/7146
-     - If you dont have pip installed on your Mac you can install it by running the following commands:
-       ```
-       sudo easy_install pip
-       sudo pip install --upgrade pip
-       ```
 4. Create a folder called vagrant under "Documents"
 5. Download and copy "Vagrantfile" from the setup_files folder to the newly created folder
 6. Download and copy "server_access.yml" from the setup_files folder to the same folder
