@@ -3,7 +3,8 @@
   hosts: 192.168.50.11
   tasks:
   - name: remove apache package
-    command: sudo dnf remove httpd -y
+    command: dnf remove httpd -y
+    become: yes
   - name: Remove website files from /var/www/html
     file:
       path: /var/www/html/
