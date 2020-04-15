@@ -75,11 +75,47 @@ web2 (Fedora32)
 11. Within Tower go the user menu on the left and change the admin password to something you can remember
 
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++  
-Now you have a fully functional Ansible Tower server with two CentOS VMs running.   
+Now you have a fully functional Ansible Tower server with two Fedora VMs running.   
 You can access your Tower server and run playbooks etc.  
-Now you can run any of the available demos below. 
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++  
 
+### Configuring Tower to run playbooks
+
+1. Login to Ansible Tower
+2. Add your Fedora servers to your invetory:
+   - Resources > Inventory > Create new "inventory" (plus sign button top right)
+   - Give it a name and save
+   - Under the newly created inventory click on hosts
+   - Click on the plus sign to add a new host
+   - Under host name add the IP address of the web1 (192.168.50.11)
+ 3. Add a project:
+   - Resources > Projects > Plus sign to add new project
+   - For the SCM type select git 
+   - Under the SCM URL enter https://github.com/m1820/atd
+   - Give it a name and click save
+ 4. Add the credentials to manage your web hosts. The hosts were configured with SSH KeyPairs:
+   - Navegate to the vagrant folder you created under your documents
+   - Login to the Tower server by going to the terminal and entering the following command  
+     ` vagrant ssh tower `
+   - Get the ssh private key by entering the following command
+     `cat ~/.ssh/id_rsa`
+   - Copy the Private Key
+     -----BEGIN RSA PRIVATE KEY----  
+     -----END RSA PRIVATE KEY-----  
+   - Now that you have the key go back to the Tower Server UI
+   - Resources > Credentials
+   - Select credential tye and select Machine
+   - Give it a name
+   - Under user name enter vagrant
+   - Paste the Private Key you copied from the Tower server into the SSH Private Key section
+   - Click Save
+
+You have now confgured Ansible Tower with the inventory of the Fedora servers, added the github project which will give you access to the playbooks, and added the correct credentials.
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Its time to setup your playbooks   
+Now you can run any of the available demos below
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 <h2>Demos - Instructions</h2>
 <h3> Linux Demos </h3>
