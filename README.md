@@ -42,11 +42,11 @@ tower
 https://192.168.50.10
 
 Static Website  
-web1  (Fedora32)  
+web1  (Fedora31)  
 192.168.50.11  
 
 Wordpress  
-web2 (Fedora32)  
+web2 (Fedora31)  
 192.168.50.12  
 
 <h2>Installing and running Ansible Tower Lab</h2>
