@@ -65,8 +65,8 @@ IP: 192.168.50.12
 8. Run the following command  
     `vagrant up `   
     This will do the following:  
-        - Run the vagrant config file you copied to the vagrant folder 
-        - Create the first 3 virtual machines (Ansible Tower, 2 CentOS servers)  
+        - Run the vagrant config file you copied to the vagrant folder   
+        - Create the first 3 virtual machines (Ansible Tower, 2 Fedora servers)    
         - Run through the server_access.yml file which will configure access to the VMs using ssh key pairs  
 9. Once the vagrant up command finishes you would have to login to the Ansible Tower Server and add a subscription  
     - For Red Hatters reach out to me internally if you are not sure how to get a sub for it
