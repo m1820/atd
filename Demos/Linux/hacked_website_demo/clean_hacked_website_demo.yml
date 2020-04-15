@@ -4,9 +4,6 @@
   tasks:
   - name: Remove the Apache package
     command: sudo dnf remove httpd
-#    yum:
-#      name: httpd
-#      state: absent
   - name: Remove website files from /var/www/html
     file:
       path: /var/www/html/
