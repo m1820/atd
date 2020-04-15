@@ -3,9 +3,10 @@
   hosts: 192.168.50.11
   tasks:
   - name: Remove the Apache package
-    yum:
-      name: httpd
-      state: absent
+    command: sudo dnf remove httpd
+#    yum:
+#      name: httpd
+#      state: absent
   - name: Remove website files from /var/www/html
     file:
       path: /var/www/html/
