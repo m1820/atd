@@ -3,7 +3,7 @@ Created by Christian Trujillo
 
 Follow me:  
 
-Linkedin [/trujillochristian](https://linkedin.com/in/trujillochristian)  
+LinkedIn [/trujillochristian](https://linkedin.com/in/trujillochristian)  
 Twitter [@hciadvisor](https://twitter.com/hciadvisor)  
 Website [HCIBlos.com](https://hciblogs.com)  
 YouTube [HCIBlogs](https://www.youtube.com/channel/UCuzUAh-TVnbfwa8VxhWrUVg)    
