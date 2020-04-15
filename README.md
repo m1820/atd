@@ -14,9 +14,9 @@ The demos will provide a way to create, recreate and destroy only the demo porti
 
 
 <b>This was created with: </b> 
-- Virtual Box 6.1.4 https://www.virtualbox.org/wiki/Downloads  
-- Vagrant 2.2.7 https://www.vagrantup.com/downloads.html  
-- Ansible version 2.9.6 
+- Virtual Box 6.1.4 [Download VirtualBox](https://www.virtualbox.org/wiki/Downloads)  
+- Vagrant 2.2.7 [Download Vagrant](https://www.vagrantup.com/downloads.html)  
+- Ansible version 2.9.6 [Install Ansible](https://docs.ansible.com/ansible/latest/installation_guide/intro_installation.html#installing-ansible-on-macos)  
 - Mac OSX 10.15.2   
 You may be able to run through this instructions on a Windows/Linux based system.  
 I have not tested so any help with this would be greatly appreciated.   
@@ -54,10 +54,10 @@ web2 (Fedora31)
 <h2>Installing and running Ansible Tower Lab</h2>
 <b>Instructions: </b>
 
-1. Download and install Virtual Box
-2. Download and install Vagrant
+1. Download and install Virtual Box [Download VirtualBox](https://www.virtualbox.org/wiki/Downloads) 
+2. Download and install Vagrant [Download Vagrant](https://www.vagrantup.com/downloads.html) 
 3. Install Ansible engine
-    - https://docs.ansible.com/ansible/latest/installation_guide/intro_installation.html#installing-ansible-on-macos
+    - [Ansible Installation Documentation](https://docs.ansible.com/ansible/latest/installation_guide/intro_installation.html#installing-ansible-on-macos)  
 4. Create a folder called vagrant under "Documents"
 5. Download and copy "Vagrantfile" from the setup_files folder to the newly created folder
 6. Download and copy "server_access.yml" from the setup_files folder to the same folder
