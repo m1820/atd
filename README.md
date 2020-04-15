@@ -33,7 +33,7 @@ This demo will run locally on your MacOS machine
 
 - Ansible Tower Server  
 - 2 Fedora servers
-- 2 Windows Machines (coming soon)
+- 2 Windows VMs (coming soon)
 
 <b>Inventory:</b>
 
