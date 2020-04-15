@@ -19,7 +19,7 @@ The demos will provide a way to create, recreate and destroy only the demo porti
 <b>This was created with: </b> 
 - Virtual Box 6.1.4 https://www.virtualbox.org/wiki/Downloads  
 - Vagrant 2.2.7 https://www.vagrantup.com/downloads.html  
-- Ansible version 2.9.6 [Install Process](#Install Ansible engine)
+- Ansible version 2.9.6 [Install Process](#Install-Ansible-engine)
 - Mac OSX 10.15.2   
 You may be able to run through this instructions on a Windows/Linux based system.  
 I have not tested so any help with this would be greatly appreciated.   
@@ -58,7 +58,7 @@ web2 (Fedora32)
 
 1. Download and install Virtual Box
 2. Download and install Vagrant
-3. #Install Ansible engine
+3. # Install Ansible engine
     - https://docs.ansible.com/ansible/latest/installation_guide/intro_installation.html#id18  
     - I experienced some issues with Ansible not running on MacOS I fixed it by Installing Ansible in the following way:  
        ```
