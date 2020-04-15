@@ -74,7 +74,8 @@ IP: 192.168.50.12
 10. Once you get the trial subscription for tower you will need to find out the login credentials to access the Tower Server:
     - On the terminal window under the same vagrant directory type: `vagrant ssh tower`  
     - As soon as you login you will see the user name and password for the Tower server
-11. Within Tower go the user menu on the left and change the admin password to something you can remember
+11. Login to the Tower server via the browser https://192.168.50.10
+12. Within Tower go the user menu on the left and change the admin password to something you can remember
 
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++  
 Now you have a fully functional Ansible Tower server with two Fedora VMs running.   
