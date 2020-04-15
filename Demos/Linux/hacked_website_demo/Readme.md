@@ -28,7 +28,7 @@ All the playbooks are labled from Step 1 to Step 4
 1. STEP 1 Setting up web servers: 
    - Under Tower go to Resources > Templates click on the plus sign to add a new "job playbook"
    - Enter a Name
-   - Under Inventory select the inventory you created with your CentOS servers
+   - Under Inventory select the inventory you created with your Fedora servers
    - Under project select the github project you created
    - Under Playbook slect the Step1_webserver_setup.yml
    - For ther Job Type select run
@@ -38,7 +38,7 @@ All the playbooks are labled from Step 1 to Step 4
 2. STEP 2 Building demo website
    - Under Tower go to Resources > Templates click on the plus sign to add a new "job playbook"
    - Enter a Name
-   - Under Inventory select the inventory you created with your CentOS servers
+   - Under Inventory select the inventory you created with your Fedora servers
    - Under project select the github project you created
    - Under Playbook slect the Step2_Build_Website.yml
    - For ther Job Type select run
@@ -48,7 +48,7 @@ All the playbooks are labled from Step 1 to Step 4
 3. STEP 3 Hacking website
    - Under Tower go to Resources > Templates click on the plus sign to add a new "job playbook"
    - Enter a Name
-   - Under Inventory select the inventory you created with your CentOS servers
+   - Under Inventory select the inventory you created with your Fedora servers
    - Under project select the github project you created
    - Under Playbook slect the Step3_hacking_website.yml
    - For ther Job Type select run
@@ -58,7 +58,7 @@ All the playbooks are labled from Step 1 to Step 4
 4. STEP 4 Restoring website
    - Under Tower go to Resources > Templates click on the plus sign to add a new "job playbook"
    - Enter a Name
-   - Under Inventory select the inventory you created with your CentOS servers
+   - Under Inventory select the inventory you created with your Fedora servers
    - Under project select the github project you created
    - Under Playbook slect the Step4_restoring_website.yml
    - For ther Job Type select run
