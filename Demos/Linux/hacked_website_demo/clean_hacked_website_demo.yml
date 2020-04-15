@@ -1,9 +1,9 @@
 ---
-- name: Cleaning chacked website demo
+- name: Cleaning hacked website demo
   hosts: 192.168.50.11
   tasks:
   - name: remove apache package
-    command: sudo dnf remove httpd
+    command: sudo dnf remove httpd -y
   - name: Remove website files from /var/www/html
     file:
       path: /var/www/html/
