@@ -55,7 +55,7 @@ web2 (Fedora32)
 1. Download and install Virtual Box
 2. Download and install Vagrant
 3. # Install Ansible engine
-    - https://docs.ansible.com/ansible/latest/installation_guide/intro_installation.html#id18  
+    - https://docs.ansible.com/ansible/latest/installation_guide/intro_installation.html#installing-ansible-on-macos
 4. Create a folder called vagrant under "Documents"
 5. Download and copy "Vagrantfile" from the setup_files folder to the newly created folder
 6. Download and copy "server_access.yml" from the setup_files folder to the same folder
