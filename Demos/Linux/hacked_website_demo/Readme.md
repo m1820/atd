@@ -1,7 +1,14 @@
 # Hacked Website Demo Instructions 
-<h4>Im working on a video to demonstrate the demo (comming soon)</h4>
+Created by Christian Trujillo   
 
-Created by Christian Trujillo  
+Follow me:  
+
+Linkedin [/trujillochristian](https://linkedin.com/in/trujillochristian)  
+Twitter [@hciadvisor](https://twitter.com/hciadvisor)  
+Website [HCIBlos.com](https://hciblogs.com)  
+YouTube [HCIBlogs](https://www.youtube.com/channel/UCuzUAh-TVnbfwa8VxhWrUVg)  
+
+<h4>Im working on a video to demonstrate the demo (comming soon)</h4>
 
 This demo will do the following:
  - Build apache webserver
