@@ -1,7 +1,7 @@
 # Ansible Tower Demos Using Vagrant For Mac OS 
 Created by Christian Trujillo  
 Follow me:  
-[@hciadvisor](https://twitter.com/hciadvisor)  
+Twitter [@hciadvisor](https://twitter.com/hciadvisor)  
 Linkedin [/trujillochristian](https://linkedin.com/in/trujillochristian)  
 Website [HCIBlos.com](https://hciblogs.com)  
 YouTube [HCIBlogs](https://www.youtube.com/channel/UCuzUAh-TVnbfwa8VxhWrUVg)  
