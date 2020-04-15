@@ -91,6 +91,7 @@ You can access your Tower server and run playbooks etc.
    - Under the newly created inventory click on hosts
    - Click on the plus sign to add a new host
    - Under host name add the IP address of the web1 (192.168.50.11)
+   - Follow the same procedure to add the second server web1 (192.168.50.12)
  3. Add a project:
    - Resources > Projects > Plus sign to add new project
    - For the SCM type select git 
@@ -100,9 +101,9 @@ You can access your Tower server and run playbooks etc.
    - Navegate to the vagrant folder you created under your documents
    - Login to the Tower server by going to the terminal and entering the following command  
      ` vagrant ssh tower `
-   - Get the ssh private key by entering the following command
+   - Get the ssh private key by entering the following command  
      `cat ~/.ssh/id_rsa`
-   - Copy the Private Key
+   - Copy the Private Key   
      -----BEGIN RSA PRIVATE KEY----  
      -----END RSA PRIVATE KEY-----  
    - Now that you have the key go back to the Tower Server UI
