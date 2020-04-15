@@ -4,7 +4,8 @@ Thank you Jerry @Corumj for your help!!
 
 I have created an instructional video to walk you through the setup:
 
-[Ansible Tower Lab Setup Video](https://youtu.be/b3Utw4YGmOI)
+[Ansible Tower Lab Setup Video](https://youtu.be/b3Utw4YGmOI)   
+[Jump to the Install Process](#Install-Process)
 
 This project was created to generate a stable, portable, and permanent, Ansible Tower lab environment.
 The idea is to have a lab environment that can stay permanent so your configurations can be saved everytime you want to use it.
@@ -15,7 +16,7 @@ The demos will provide a way to create, recreate and destroy only the demo porti
 <b>This was created with: </b> 
 - Virtual Box 6.1.4 https://www.virtualbox.org/wiki/Downloads  
 - Vagrant 2.2.7 https://www.vagrantup.com/downloads.html  
-- Ansible version 2.9.6 [Install Process](#Install-Ansible-engine)
+- Ansible version 2.9.6 
 - Mac OSX 10.15.2   
 You may be able to run through this instructions on a Windows/Linux based system.  
 I have not tested so any help with this would be greatly appreciated.   
@@ -49,12 +50,13 @@ Wordpress
 web2 (Fedora31)  
 192.168.50.12  
 
+# Install Process  
 <h2>Installing and running Ansible Tower Lab</h2>
 <b>Instructions: </b>
 
 1. Download and install Virtual Box
 2. Download and install Vagrant
-3. # Install Ansible engine
+3. Install Ansible engine
     - https://docs.ansible.com/ansible/latest/installation_guide/intro_installation.html#installing-ansible-on-macos
 4. Create a folder called vagrant under "Documents"
 5. Download and copy "Vagrantfile" from the setup_files folder to the newly created folder
