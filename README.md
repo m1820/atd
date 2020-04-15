@@ -11,10 +11,6 @@ The idea is to have a lab environment that can stay permanent so your configurat
 
 The demos will provide a way to create, recreate and destroy only the demo portion without hurting the base environment. 
 
-++++++++++++++++++++++++++++++++  
-<b>STILL UNDER DEVELOPMENT </b>  
-++++++++++++++++++++++++++++++++  
-
 
 <b>This was created with: </b> 
 - Virtual Box 6.1.4 https://www.virtualbox.org/wiki/Downloads  
