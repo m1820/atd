@@ -116,10 +116,10 @@ You can access your Tower server and run playbooks etc.
 
 You have now confgured Ansible Tower with the inventory of the Fedora servers, added the github project which will give you access to the playbooks, and added the correct credentials.
 
-++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-Its time to setup your playbooks   
-Now you can run any of the available demos below
-++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++  
+Its time to setup your Templates/Playbooks   
+Now you can run any of the available demos below  
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++  
 
 <h2>Demos - Instructions</h2>
 <h3> Linux Demos </h3>
