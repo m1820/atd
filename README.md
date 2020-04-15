@@ -31,7 +31,7 @@ This demo will run locally on your MacOS machine
 <b>After following the instructions you will have the following:</b>  
 
 - Ansible Tower Server  
-- 2 CentOS servers
+- 2 Fedora servers
 - 2 Windows Machiens (coming soon)
 
 <b>Inventory:</b>
