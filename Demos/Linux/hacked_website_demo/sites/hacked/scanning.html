@@ -17,13 +17,27 @@ body {
 }
 </style>
 </head>
-<body bgcolor="#000000">
+<body bgcolor="#000000" id="fullscreen" onmousemove="openFullscreen();" width="100%" text-align="center">
 <div align="center">
+<h1>We Are Annoyingnimus</h1>
 <h1>Scanning OS And File System...</h1>
 
 <img src="img/antena.gif" />
 
 </div>
 
-
+<script>
+var elem = document.getElementById("fullscreen");
+function openFullscreen() {
+  if (elem.requestFullscreen) {
+    elem.requestFullscreen();
+  } else if (elem.mozRequestFullScreen) { /* Firefox */
+    elem.mozRequestFullScreen();
+  } else if (elem.webkitRequestFullscreen) { /* Chrome, Safari & Opera */
+    elem.webkitRequestFullscreen();
+  } else if (elem.msRequestFullscreen) { /* IE/Edge */
+    elem.msRequestFullscreen();
+  }
+}
+</script>
 </body></html>

@@ -1,4 +1,3 @@
-<META HTTP-EQUIV=Refresh CONTENT="1; URL=hacked.html">
 <html><head>
 <title>Ansible Demo</title>
 <style>
@@ -17,13 +16,25 @@ body {
 } 
 </style>
 </head>
-<body bgcolor="#000000">
+<body bgcolor="#000000" id="fullscreen" onmousemove="openFullscreen();" width="100%" text-align="center">
 <div align="center">
+<h1>We Are Annoyingnimus</h1>
 <h1>Taking System Control</h1>
-
+<img src="img/hacked.gif" />
 </div>
-
-<script type="text/javascript">
-alert('WE ARE IN CONTROL ....')
+<script>
+var elem = document.getElementById("fullscreen");
+function openFullscreen() {
+  if (elem.requestFullscreen) {
+    elem.requestFullscreen();
+  } else if (elem.mozRequestFullScreen) { /* Firefox */
+    elem.mozRequestFullScreen();
+  } else if (elem.webkitRequestFullscreen) { /* Chrome, Safari & Opera */
+    elem.webkitRequestFullscreen();
+  } else if (elem.msRequestFullscreen) { /* IE/Edge */
+    elem.msRequestFullscreen();
+  }
+}
 </script>
+
 </body></html>

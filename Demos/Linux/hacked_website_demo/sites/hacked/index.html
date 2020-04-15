@@ -1,4 +1,4 @@
-<META HTTP-EQUIV=Refresh CONTENT="2; URL=countdown.html">
+<META HTTP-EQUIV=Refresh CONTENT="3; URL=countdown.html">
 <html><head>
 <title>Ansible Demo</title>
 <style>
@@ -17,13 +17,28 @@ body {
 }
 </style>
 </head>
-<body bgcolor="#000000">
+<body bgcolor="#000000" id="fullscreen" onmousemove="openFullscreen();" width="100%" text-align="center">
 <div align="center">
-<h1>You Are Not Authorized On This Page</h1>
+<h1>We Are Annoyingnimus</h1>
 
 <img src="img/alert.gif" />
-<p>If You Continue, Your System Will Be Hacked</p>
+<p>Your System Will Be Hacked</p>
 </div>
 
+<script>
+var elem = document.getElementById("fullscreen");
+function openFullscreen() {
+  if (elem.requestFullscreen) {
+    elem.requestFullscreen();
+  } else if (elem.mozRequestFullScreen) { /* Firefox */
+    elem.mozRequestFullScreen();
+  } else if (elem.webkitRequestFullscreen) { /* Chrome, Safari & Opera */
+    elem.webkitRequestFullscreen();
+  } else if (elem.msRequestFullscreen) { /* IE/Edge */
+    elem.msRequestFullscreen();
+  }
+}
+</script>
 
-</body></html>
+</body>
+</html>
