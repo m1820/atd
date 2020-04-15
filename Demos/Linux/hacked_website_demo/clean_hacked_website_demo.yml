@@ -2,15 +2,15 @@
 - name: Cleaning chacked website demo
   hosts: 192.168.50.11
   tasks:
-- name: Remove the Apache package
-  dnf:
-    name: httpd
-    state: absent
-- name: Remove website files from /var/www/html
-  file:
-     path: /var/www/html/
+  - name: remove apache package
+    dnf:
+      name: httpd
+      state: absent
+  - name: Remove website files from /var/www/html
+    file:
+      path: /var/www/html/
+      state: absent
+  - name: Remove website files from /home/vagrant/websites
+    file:
+     path: /home/vagrant/websites
      state: absent
-- name: Remove website files from /home/vagrant/websites
-  file:
-    path: /home/vagrant/websites
-    state: absent
