@@ -38,17 +38,17 @@ This demo will run locally on your MacOS machine
 <b>Inventory:</b>
 
 Ansible Tower Server  
-tower
-192.168.50.10  
+Hostname: tower  
+IP: 192.168.50.10    
 https://192.168.50.10
 
 Static Website  
-web1  (Fedora31)  
-192.168.50.11  
+Hostname: web1  (Fedora31)  
+IP: 192.168.50.11  
 
-Wordpress  
-web2 (Fedora31)  
-192.168.50.12  
+WordPress  
+Hostname: web2 (Fedora31)  
+IP: 192.168.50.12  
 
 # Install Process  
 <h2>Installing and running Ansible Tower Lab</h2>
