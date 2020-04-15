@@ -29,7 +29,7 @@ This demo will run locally on your MacOS machine
 <h1>Lab Configuration</h1>
 <h2>Base lab configuration to be use with all the available Demos</h2>  
 
-<b>After you complete the instal process you will have the following:</b>  
+<b>After you complete the install process you will have the following:</b>  
 
 - Ansible Tower Server  
 - 2 Fedora servers
