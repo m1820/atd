@@ -1,4 +1,4 @@
-# Ansible Tower Demos Using Vagrant For Mac OS 
+# Ansible Tower Lab (With Demos) Using Vagrant For Mac OS 
 Created by Christian Trujillo   
 
 Follow me:  
