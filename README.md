@@ -14,7 +14,9 @@ Thank you Jerry @Corumj for your help!!
 
 I have created an instructional video to walk you through the setup:
 
-[Ansible Tower Lab Setup Video](https://youtu.be/b3Utw4YGmOI)   
+[Ansible Tower Lab Setup Video](https://youtu.be/b3Utw4YGmOI)  
+
+
 [Jump to the Install Process](#Install-Process)
 
 This project was created to generate a stable, portable, and permanent, Ansible Tower lab environment.
