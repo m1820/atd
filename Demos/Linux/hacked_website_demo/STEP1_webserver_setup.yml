@@ -6,6 +6,7 @@
     dnf:
       name: httpd
       state: latest
+    become: yes
   - name: ensure httpd is running
     service:
       name: httpd 
