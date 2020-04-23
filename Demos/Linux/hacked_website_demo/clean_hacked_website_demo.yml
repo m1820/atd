@@ -4,7 +4,6 @@
   tasks:
 - name: remove apache package
   command: dnf remove httpd -y
-    become: yes
     args:
     warn: no
 - name: Remove website files from /var/www/html
