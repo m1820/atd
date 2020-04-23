@@ -2,10 +2,11 @@
 - name: This sets up an httpd webserver
   hosts: 192.168.50.11
   tasks:
-  - name: Install apache packages 
-    yum:
+  - name: install the latest version of Apache
+    dnf:
       name: httpd
-      state: present
+      state: latest
+    become: yes
   - name: ensure httpd is running
     service:
       name: httpd 
