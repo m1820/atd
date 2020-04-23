@@ -2,15 +2,13 @@
 - name: Cleaning hacked website demo
   hosts: 192.168.50.11
   tasks:
-- name: remove apache package
-  command: dnf remove httpd -y
-  args:
-    warn: no
-- name: Remove website files from /var/www/html
-  file:
-    path: /var/www/html/
-    state: absent
-- name: Remove website files from /home/vagrant/websites
-  file:
-    path: /home/vagrant/websites
-    state: absent
+  - name: remove apache package
+    command: dnf remove httpd -y
+  - name: Remove website files from /var/www/html
+    file:
+     path: /var/www/html/
+     state: absent
+  - name: Remove website files from /home/vagrant/websites
+    file:
+     path: /home/vagrant/websites
+     state: absent
