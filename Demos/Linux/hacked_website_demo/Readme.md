@@ -9,7 +9,7 @@ Website [HCIBlos.com](https://hciblogs.com)
 YouTube [HCIBlogs](https://www.youtube.com/channel/UCuzUAh-TVnbfwa8VxhWrUVg)  
 Podcast [Datacenter Evolution](https://hciblogs.com/show/)
 
-<h4>Im working on a video to demonstrate the demo (comming soon)</h4>
+[Check out the Video Tutorial](https://youtu.be/skPJtJYKrPs)
 
 This demo will do the following:
  - Build apache webserver
