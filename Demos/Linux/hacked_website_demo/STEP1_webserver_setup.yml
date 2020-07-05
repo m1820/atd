@@ -7,7 +7,8 @@
       name: httpd
       state: latest
     become: yes
-  - service:
+  - name: enable Apache on start
+    service:
       name: httpd
       enabled: yes
     become: yes
@@ -15,6 +16,7 @@
     service:
       name: httpd 
       state: started
+    become: yes
   - name: Open port 80 for http access
     firewalld:
       service: http
