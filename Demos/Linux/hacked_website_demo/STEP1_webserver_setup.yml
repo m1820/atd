@@ -22,7 +22,9 @@
       service: http
       permanent: true
       state: enabled
+    become: yes
   - name: Restart the firewalld service to load in the firewall changes
     service: 
       name: firewalld 
       state: restarted
+    become: yes
