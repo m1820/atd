@@ -10,6 +10,7 @@
   - service:
       name: httpd
       enabled: yes
+    become: yes
   - name: ensure httpd is running
     service:
       name: httpd 
