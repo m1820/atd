@@ -7,11 +7,13 @@
       name: httpd
       state: latest
     become: yes
+  - service:
+      name: httpd
+      enabled: yes
   - name: ensure httpd is running
     service:
       name: httpd 
       state: started
-      enabled: yes
   - name: Open port 80 for http access
     firewalld:
       service: http
