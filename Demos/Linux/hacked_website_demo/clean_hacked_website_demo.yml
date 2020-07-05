@@ -4,11 +4,14 @@
   tasks:
   - name: remove apache package
     command: dnf remove httpd -y
+    become: yes
   - name: Remove website files from /var/www/html
     file:
-     path: /var/www/html/
-     state: absent
+      path: /var/www/html/
+      state: absent
+    become: yes
   - name: Remove website files from /home/vagrant/websites
     file:
-     path: /home/vagrant/websites
-     state: absent
+      path: /home/vagrant/websites
+      state: absent
+    become: yes
