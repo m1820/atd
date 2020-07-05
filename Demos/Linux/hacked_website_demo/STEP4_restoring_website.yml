@@ -2,10 +2,12 @@
 - name: This will restore the original website
   hosts: 192.168.50.11
   tasks:
-  - name: Copy hacked site to /var/www/html
+  - name: Copy unhacked site to /var/www/html
     copy:
       src: /home/vagrant/websites/sites/website/
       dest: /var/www/html
-      remote_src: true 
+      remote_src: true
+    become: yes
   - name: This will restore /var/www's context as determined by SELinux's system policy to /var/www and all folders and files below it.
     command: restorecon -R /var/www
+    become: yes
