@@ -108,7 +108,7 @@ You can access your Tower server and run playbooks etc.
    - Under the newly created inventory click on hosts
    - Click on the plus sign to add a new host
    - Under host name add the IP address of the web1 (192.168.50.11)
-   - Follow the same procedure to add the second server web1 (192.168.50.12)
+   - Follow the same procedure to add the second server web2 (192.168.50.12)
  3. Add a project:
    - Resources > Projects > Plus sign to add new project
    - For the SCM type select git 
