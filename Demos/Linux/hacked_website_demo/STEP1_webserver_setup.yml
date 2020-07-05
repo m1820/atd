@@ -11,6 +11,7 @@
     service:
       name: httpd 
       state: started
+      enabled: yes
   - name: Open port 80 for http access
     firewalld:
       service: http
