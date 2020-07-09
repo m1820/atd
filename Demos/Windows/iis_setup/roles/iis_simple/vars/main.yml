@@ -1,0 +1,3 @@
+---
+# vars file for iis_simple
+iis_test_message: "Hello World!  My test IIS Server"

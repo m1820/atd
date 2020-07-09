@@ -1,0 +1,9 @@
+---
+# defaults file for iis_simple
+iis_sites:
+  - name: 'Ansible Playbook Test'
+    port: '8080'
+    path: 'C:\sites\playbooktest'
+  - name: 'Ansible Playbook Test 2'
+    port: '8081'
+    path: 'C:\sites\playbooktest2'

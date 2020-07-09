@@ -1,0 +1,7 @@
+---
+# handlers file for iis_simple
+- name: restart iis service
+  win_service:
+    name: W3Svc
+    state: restarted
+    start_mode: auto
