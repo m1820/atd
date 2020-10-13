@@ -80,6 +80,11 @@ IP: 192.168.50.12
         - Run the vagrant config file you copied to the vagrant folder   
         - Create the first 3 virtual machines (Ansible Tower, 2 Fedora servers)    
         - Run through the server_access.yml file which will configure access to the VMs using ssh key pairs  
+    `MacOS 10.9.3 and upwards might require to close VirtualBox and restart it with the following command:`
+    ```bash
+    sudo "/Library/Application Support/VirtualBox/LaunchDaemons/VirtualBoxStartup.sh" restart
+    ```
+    More information can be found [here](https://stackoverflow.com/questions/21069908/vboxmanage-error-failed-to-create-the-host-only-adapter).
 9. Once the vagrant up command finishes you would have to login to the Ansible Tower Server and add a subscription  
     - For Red Hatters reach out to me internally if you are not sure how to get a sub for it
     - For non-Red Hatters you can request a trial license here: https://www.ansible.com/products/tower/trial  
@@ -103,7 +108,7 @@ You can access your Tower server and run playbooks etc.
    - Under the newly created inventory click on hosts
    - Click on the plus sign to add a new host
    - Under host name add the IP address of the web1 (192.168.50.11)
-   - Follow the same procedure to add the second server web1 (192.168.50.12)
+   - Follow the same procedure to add the second server web2 (192.168.50.12)
  3. Add a project:
    - Resources > Projects > Plus sign to add new project
    - For the SCM type select git 

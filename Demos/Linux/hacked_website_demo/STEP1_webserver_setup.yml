@@ -7,16 +7,24 @@
       name: httpd
       state: latest
     become: yes
+  - name: enable Apache on start
+    service:
+      name: httpd
+      enabled: yes
+    become: yes
   - name: ensure httpd is running
     service:
       name: httpd 
       state: started
+    become: yes
   - name: Open port 80 for http access
     firewalld:
       service: http
       permanent: true
       state: enabled
+    become: yes
   - name: Restart the firewalld service to load in the firewall changes
     service: 
       name: firewalld 
       state: restarted
+    become: yes
